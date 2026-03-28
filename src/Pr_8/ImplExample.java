@@ -1,0 +1,14 @@
+package Pr_8;
+
+//Implementing the remote interface
+import java.rmi.RemoteException;
+
+public class ImplExample implements Hello {
+
+ // Implementing the interface method
+ public String printMsg() throws RemoteException {
+     String msg = "This is an example RMI program";
+     System.out.println(msg);
+     return msg;   // MUST return String
+ }
+}
